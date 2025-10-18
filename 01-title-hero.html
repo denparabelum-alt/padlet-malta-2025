@@ -5,73 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Generative Image Creation Tools — Lesson Plan</title>
 <style>
-  :root{
-    --bg:#f3f6f9; --paper:#ffffff;
-    --heading:#D10000;           /* red headings */
-    --ink:#0E2957;               /* dark-navy body */
-    --primary:#11A861;           /* green buttons/links */
-    --success:#11A861;           /* green success */
-    --border:#2F5BA9;            /* blue borders */
-    --muted:#5A6786;             /* explanatory */
-    --shadow:0 2px 6px rgba(15,23,42,.06), 0 8px 24px rgba(15,23,42,.06);
-    --r:12px; --rs:10px;
-  }
-  *{box-sizing:border-box}
-  html,body{height:100%}
-  body{
-    margin:0; background:var(--bg);
-    font-family:Poppins, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color:var(--ink);
-    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-  }
-  a{color:var(--primary); text-decoration:none}
-  a:hover{text-decoration:underline}
-  .container{max-width:1100px; margin:0 auto; padding:28px}
-
-  /* HEADER: left nav + bigger logo; author on the right */
-  .topbar{
-    display:flex; align-items:center; justify-content:space-between; gap:12px;
-    padding:16px 28px 0; max-width:1100px; margin:0 auto;
-  }
-  .left{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
-  .left img.logo{
-    width:44px; height:44px; border-radius:10px;
-    box-shadow:var(--shadow); border:1px solid var(--border); background:#fff;
-  }
-  .nav{display:flex; gap:8px; flex-wrap:wrap}
-  .btn{
-    display:inline-flex; align-items:center; gap:8px;
-    padding:10px 14px; border-radius:8px;
-    border:1px solid var(--border); background:#fff; color:#0E2957;
-    box-shadow:var(--shadow); text-decoration:none;
-  }
-  .btn.primary{background:var(--primary); color:#fff; border-color:transparent}
-  .author{font-size:14px; color:var(--muted); font-weight:600}
-
-  /* HERO card */
-  .card{background:var(--paper); border:1px solid var(--border); border-radius:var(--r); box-shadow:var(--shadow)}
-  .card-pad{padding:22px 24px}
-  .h1{font-size:clamp(30px,4.8vw,40px); color:var(--heading); margin:0 0 6px; font-weight:700; letter-spacing:.2px}
-  .lead{font-size:clamp(15px,1.8vw,17px); color:var(--muted); line-height:1.8; margin:0}
+  /* встав тут увесь CSS з блоку вище */
 </style>
 </head>
 <body>
 
-  <header class="topbar">
-    <div class="left">
-      <!-- підстав свій шлях до логотипу, якщо інший -->
-      <img class="logo" src="./logo.svg" alt="Organization logo"/>
-      <nav class="nav" aria-label="Primary">
-        <a class="btn" href="01-title-hero.html">Hero</a>
-        <a class="btn" href="02-overview-cards.html">Overview</a>
-        <a class="btn" href="03-preview-objectives.html">Objectives</a>
-        <a class="btn" href="04-assessment.html">Assessment</a>
-        <a class="btn" href="05-resources.html">Resources</a>
-        <a class="btn primary" href="https://padlet.com/embed/m9b9jldr9dube81g" target="_blank" rel="noopener">Open Padlet</a>
-      </nav>
-    </div>
-    <div class="author">Yankin Denys</div>
-  </header>
+  <!-- встав тут HEADER з блоку вище -->
 
   <main class="container">
     <section class="card card-pad">
