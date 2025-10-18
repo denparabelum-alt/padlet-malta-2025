@@ -1,44 +1,36 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Padlet Preview Embed</title>
-  <meta name="description" content="Попередній перегляд дошки Padlet" />
-  <style>
-    body {
-      margin: 0;
-      background: #f4f4f4;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .padlet-embed {
-      border: 1px solid rgba(0,0,0,0.1);
-      border-radius: 4px;
-      box-sizing: border-box;
-      overflow: hidden;
-      position: relative;
-      width: 480px;
-      height: 352px;
-      max-width: 100%;
-      background: #fff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
-    }
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lesson Hub · Index</title>
+<style>
+  :root{--bg:#f3f6f9;--paper:#fff;--ink:#0E2957;--heading:#D10000;--primary:#11A861;--border:#2F5BA9;--muted:#5A6786;--shadow:0 2px 6px rgba(15,23,42,.06),0 8px 24px rgba(15,23,42,.06);--r:12px}
+  *{box-sizing:border-box} html,body{height:100%}
+  body{margin:0;background:var(--bg);font-family:Poppins,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;color:var(--ink)}
+  .container{max-width:900px;margin:0 auto;padding:28px}
+  h1{margin:0 0 10px;color:var(--heading);font-size:32px}
+  p{margin:0 0 18px;color:var(--muted)}
+  .card{background:var(--paper);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:18px}
+  .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:12px}
+  .col-6{grid-column:span 6} @media(max-width:800px){.col-6{grid-column:span 12}}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:8px;border:1px solid var(--border);background:#fff;color:#0E2957;box-shadow:var(--shadow);text-decoration:none}
+</style>
 </head>
 <body>
-  <div class="padlet-embed">
-    <iframe src="https://padlet.com/padlets/m9b9jldr9dube81g/embeds/preview_embed" frameborder="0" allowfullscreen></iframe>
-  </div>
+  <main class="container">
+    <div class="card">
+      <h1>Generative Image Creation Tools — Lesson Plan</h1>
+      <p>Entry page for GitHub Pages. Open a section:</p>
+      <div class="grid">
+        <div class="col-6"><a class="btn" href="01-title-hero.html">Hero</a></div>
+        <div class="col-6"><a class="btn" href="02-overview-cards.html">Overview</a></div>
+        <div class="col-6"><a class="btn" href="03-preview-objectives.html">Objectives</a></div>
+        <div class="col-6"><a class="btn" href="04-assessment.html">Assessment</a></div>
+        <div class="col-6"><a class="btn" href="05-resources.html">Resources</a></div>
+        <div class="col-6"><a class="btn" href="https://padlet.com/embed/m9b9jldr9dube81g" target="_blank" rel="noopener">Open Padlet</a></div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
