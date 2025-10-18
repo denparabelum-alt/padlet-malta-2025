@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Preview & Learning Objectives</title>
+<style>
+  :root{
+    --bg:#ffffff; --paper:#ffffff;
+    --heading:#D10000;
+    --ink:#0E2957;
+    --primary:#11A861;
+    --border:#2F5BA9;
+    --muted:#5A6786;
+    --shadow:0 2px 6px rgba(15,23,42,.06), 0 8px 24px rgba(15,23,42,.06);
+    --r:12px; --rs:10px;
+  }
+  *{box-sizing:border-box} html,body{height:100%}
+  body{margin:0;background:#fff;font-family:Poppins,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink)}
+  a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
+  .container{max-width:1100px;margin:0 auto;padding:28px}
+
+  /* Cards & grid */
+  .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;align-items:stretch}
+  .col-6{grid-column:span 6;display:flex}
+  @media (max-width:960px){.col-6{grid-column:span 12}}
+
+  .card{background:var(--paper);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);display:flex;flex-direction:column;flex:1}
+  .card-pad{padding:22px 24px;display:flex;flex-direction:column;height:100%}
+
+  .h2{font-size:clamp(22px,3vw,28px);color:var(--heading);margin:0 0 8px;font-weight:800}
+  .lead{font-size:clamp(15px,1.8vw,17px);color:var(--muted);line-height:1.8;margin:0 0 12px}
+
+  /* List items */
+  .list{display:flex;flex-direction:column;gap:12px;margin-top:10px;flex:1}
+  .item{background:#fff;border:1px solid var(--border);border-radius:var(--rs);padding:14px 16px;box-shadow:var(--shadow);display:flex;align-items:flex-start;gap:12px}
+  .item-icon{width:28px;flex-shrink:0;margin-top:4px}
+  .item h3{margin:0 0 4px;font-size:18px;color:var(--primary);font-weight:700}
+  .item p{margin:0;font-size:14px;color:var(--ink);line-height:1.7}
+
+  /* Padlet preview */
+  .frame{position:relative;width:100%;padding-top:56.25%;background:#f8fafc;border:1px solid var(--border);border-radius:var(--rs);overflow:hidden;flex:1}
+  .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#fff}
+
+  .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:8px;border:1px solid var(--border);background:#fff;color:var(--ink);box-shadow:var(--shadow)}
+  .btn.primary{background:var(--primary);color:#fff;border-color:transparent}
+  .btn:hover{filter:brightness(.97)}
+</style>
+</head>
+<body>
+
+<main class="container grid">
+
+  <!-- LEFT COLUMN -->
+  <section class="col-6">
+    <div class="card card-pad">
+      <h2 class="h2">Learning Objectives</h2>
+      <p class="lead">Three focus areas for this lesson: tools, hands-on practice, and ethical use.</p>
+
+      <div class="list">
+        <div class="item">
+          <div class="item-icon">
+            <!-- AI chip icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <path d="M9 9h6v6H9z"></path>
+              <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"></path>
+            </svg>
+          </div>
+          <div>
+            <h3>Tool Identification</h3>
+            <p>Identify and compare key platforms used in the course: DALL·E, Midjourney, Leonardo AI, Adobe Firefly, and Canva’s AI Image Generator.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-icon">
+            <!-- paintbrush icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--primary)" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 22s1-5 5-5 5 5 5 5H2z"></path>
+              <path d="M14.5 2.5l7 7L12 19H5v-7l9.5-9.5z"></path>
+            </svg>
+          </div>
+          <div>
+            <h3>Practical Application</h3>
+            <p>Create original images from text prompts, iterate using prompt-engineering techniques, and publish results to the Padlet board.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-icon">
+            <!-- scales icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--primary)" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v18M6 7l-4 8h8l-4-8zM18 7l-4 8h8l-4-8zM2 21h20"></path>
+            </svg>
+          </div>
+          <div>
+            <h3>Ethical Understanding</h3>
+            <p>Apply copyright, privacy, and authenticity principles when producing and sharing generative imagery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIGHT COLUMN -->
+  <aside class="col-6">
+    <div class="card card-pad">
+      <h2 class="h2" style="margin-bottom:8px">Quick Preview</h2>
+      <p class="lead">Explore the board contents and open the slideshow built from this Padlet.</p>
+
+      <div class="frame">
+        <iframe
+          src="https://padlet.com/padlets/m9b9jldr9dube81g/embeds/preview_embed"
+          title="Padlet preview"
+          loading="lazy"
+          allow="clipboard-write"
+          referrerpolicy="no-referrer">
+        </iframe>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="https://padlet.com/embed/m9b9jldr9dube81g" target="_blank" rel="noopener">Open full board</a>
+        <a class="btn primary" href="https://padlet.com/denparabelum/generative-image-creation-tools-lesson-plan-m9b9jldr9dube81g/slideshow" target="_blank" rel="noopener">
+          Open Slideshow
+        </a>
+      </div>
+    </div>
+  </aside>
+</main>
+
+</body>
+</html>
