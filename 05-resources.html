@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Resources — Generative Image Creation</title>
+<style>
+  :root{
+    --bg:#ffffff; --paper:#ffffff;
+    --heading:#D10000;   /* H1–H3 */
+    --ink:#0E2957;       /* body text */
+    --primary:#11A861;   /* accents/links */
+    --border:#2F5BA9;    /* borders/dividers */
+    --muted:#5A6786;     /* help text */
+    --shadow:0 2px 6px rgba(15,23,42,.06), 0 8px 24px rgba(15,23,42,.06);
+    --r:12px; --rs:10px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:#fff;
+    font-family:Poppins,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color:var(--ink);
+  }
+  a{color:var(--primary); text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  .container{max-width:1100px; margin:0 auto; padding:28px}
+
+  /* Main card */
+  .card{background:var(--paper); border:1px solid var(--border); border-radius:var(--r); box-shadow:var(--shadow)}
+  .card-pad{padding:22px 24px}
+  .h2{font-size:clamp(24px,3.2vw,32px); color:var(--heading); margin:0 0 10px; font-weight:800; letter-spacing:.2px}
+  .lead{font-size:clamp(15px,1.8vw,17px); color:var(--muted); line-height:1.8; margin:0 0 14px}
+
+  /* Two-column resources grid */
+  .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:14px}
+  .col-6{grid-column:span 6}
+  @media (max-width:900px){ .col-6{grid-column:span 12} }
+
+  /* Resource item */
+  .item{
+    background:#fff; border:1px solid var(--border); border-radius:var(--rs);
+    padding:14px 16px; box-shadow:var(--shadow);
+  }
+  .title{
+    display:flex; align-items:center; gap:10px; margin:0 0 6px;
+    font-size:16px; font-weight:800; color:var(--ink);
+  }
+  .title a{color:var(--primary)}
+  .title a:hover{text-decoration:underline}
+  .bullet{width:18px; height:18px; flex:0 0 18px}
+  .bullet svg{width:18px; height:18px; stroke:var(--primary); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+  .desc{margin:0; color:var(--muted); line-height:1.75; font-size:14px}
+
+  /* Footer card */
+  .footer{margin-top:16px}
+  .footer .note{
+    background:#fff; border:1px solid var(--border); border-radius:var(--rs);
+    box-shadow:var(--shadow); padding:12px 16px; color:var(--muted); font-size:12px; text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<main class="container">
+  <section class="card card-pad">
+    <h2 class="h2">Resources</h2>
+    <p class="lead">Curated references used in the lesson. Use these to deepen practice, compare tools, and address ethics.</p>
+
+    <!-- Two columns -->
+    <div class="grid">
+
+      <!-- LEFT COLUMN -->
+      <div class="col-6">
+        <div class="item">
+          <h3 class="title">
+            <span class="bullet" aria-hidden="true">
+              <!-- link icon -->
+              <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.07 0l1.76-1.76a5 5 0 0 0-7.07-7.07L9 6"/><path d="M14 11a5 5 0 0 0-7.07 0L5.17 12.76A5 5 0 1 0 12.24 19.83L15 17"/></svg>
+            </span>
+            <a href="https://www.promptingguide.ai/" target="_blank" rel="noopener">Prompt Engineering Guide</a>
+          </h3>
+          <p class="desc">Structured tips and patterns for crafting prompts: intent, constraints, style cues, iteration cycles.</p>
+        </div>
+
+        <div class="item">
+          <h3 class="title">
+            <span class="bullet" aria-hidden="true">
+              <!-- link icon -->
+              <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.07 0l1.76-1.76a5 5 0 0 0-7.07-7.07L9 6"/><path d="M14 11a5 5 0 0 0-7.07 0L5.17 12.76A5 5 0 1 0 12.24 19.83L15 17"/></svg>
+            </span>
+            <a href="https://zapier.com/blog/best-ai-image-generator/" target="_blank" rel="noopener">Zapier: Best AI Image Generators</a>
+          </h3>
+          <p class="desc">Comparative overview of popular generators with strengths, limits, and use-case guidance.</p>
+        </div>
+
+        <div class="item">
+          <h3 class="title">
+            <span class="bullet" aria-hidden="true">
+              <!-- link icon -->
+              <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.07 0l1.76-1.76a5 5 0 0 0-7.07-7.07L9 6"/><path d="M14 11a5 5 0 0 0-7.07 0L5.17 12.76A5 5 0 1 0 12.24 19.83L15 17"/></svg>
+            </span>
+            <a href="https://www.globsec.org/what-we-do/publications/ethical-use-ai-navigating-copyright-challenges" target="_blank" rel="noopener">GLOBSEC: Ethical Use & Copyright</a>
+          </h3>
+          <p class="desc">Policy-level view on copyright, attribution, and the legal gray zones around AI-generated content.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-6">
+        <div class="item">
+          <h3 class="title">
+            <span class="bullet" aria-hidden="true">
+              <!-- link icon -->
+              <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.07 0l1.76-1.76a5 5 0 0 0-7.07-7.07L9 6"/><path d="M14 11a5 5 0 0 0-7.07 0L5.17 12.76A5 5 0 1 0 12.24 19.83L15 17"/></svg>
+            </span>
+            <a href="https://blog.uxfol.io/digital-portfolio/" target="_blank" rel="noopener">UXfolio: Digital Portfolio Guide</a>
+          </h3>
+          <p class="desc">How to present creative outcomes: selecting artifacts, writing context, and structuring case studies.</p>
+        </div>
+
+        <div class="item">
+          <h3 class="title">
+            <span class="bullet" aria-hidden="true">
+              <!-- link icon -->
+              <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.07 0l1.76-1.76a5 5 0 0 0-7.07-7.07L9 6"/><path d="M14 11a5 5 0 0 0-7.07 0L5.17 12.76A5 5 0 1 0 12.24 19.83L15 17"/></svg>
+            </span>
+            <a href="https://milanote.com/templates/project-plans" target="_blank" rel="noopener">Milanote: Project Plan Templates</a>
+          </h3>
+          <p class="desc">Visual planning boards for tracking prompts, iterations, references, and publishing checkpoints.</p>
+        </div>
+
+        <div class="item">
+          <h3 class="title">
+            <span class="bullet" aria-hidden="true">
+              <!-- link icon -->
+              <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.07 0l1.76-1.76a5 5 0 0 0-7.07-7.07L9 6"/><path d="M14 11a5 5 0 0 0-7.07 0L5.17 12.76A5 5 0 1 0 12.24 19.83L15 17"/></svg>
+            </span>
+            <a href="https://research.aimultiple.com/generative-ai-ethics/" target="_blank" rel="noopener">AI Multiple: Generative AI Ethics</a>
+          </h3>
+          <p class="desc">Practical lens on risks, mitigation and responsible classroom use of generative tools.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Separate footer block -->
+  <section class="footer">
+    <div class="note">Lesson Plan — Yankin Denys, 2025</div>
+  </section>
+</main>
+
+</body>
+</html>
